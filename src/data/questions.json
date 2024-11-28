@@ -1,0 +1,180 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": [
+        "London",
+        "Berlin",
+        "Paris",
+        "Madrid"
+      ],
+      "correctAnswer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correctAnswer": "Mars"
+    },
+    {
+      "id": 3,
+      "question": "What is the largest mammal in the world?",
+      "options": [
+        "African Elephant",
+        "Blue Whale",
+        "Giraffe",
+        "Polar Bear"
+      ],
+      "correctAnswer": "Blue Whale"
+    },
+    {
+      "id": 4,
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Michelangelo"
+      ],
+      "correctAnswer": "Leonardo da Vinci"
+    },
+    {
+      "id": 5,
+      "question": "What is the chemical symbol for gold?",
+      "options": [
+        "Ag",
+        "Fe",
+        "Au",
+        "Cu"
+      ],
+      "correctAnswer": "Au"
+    },
+    {
+      "id": 6,
+      "question": "Which country is home to the kangaroo?",
+      "options": [
+        "New Zealand",
+        "South Africa",
+        "Australia",
+        "Brazil"
+      ],
+      "correctAnswer": "Australia"
+    },
+    {
+      "id": 7,
+      "question": "What is the largest organ in the human body?",
+      "options": [
+        "Heart",
+        "Brain",
+        "Liver",
+        "Skin"
+      ],
+      "correctAnswer": "Skin"
+    },
+    {
+      "id": 8,
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "correctAnswer": "William Shakespeare"
+    },
+    {
+      "id": 9,
+      "question": "What is the hardest natural substance on Earth?",
+      "options": [
+        "Gold",
+        "Iron",
+        "Diamond",
+        "Platinum"
+      ],
+      "correctAnswer": "Diamond"
+    },
+    {
+      "id": 10,
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": [
+        "Oxygen",
+        "Gold",
+        "Silver",
+        "Iron"
+      ],
+      "correctAnswer": "Oxygen"
+    },
+    {
+      "id": 11,
+      "question": "What is the capital of Japan?",
+      "options": [
+        "Seoul",
+        "Beijing",
+        "Tokyo",
+        "Bangkok"
+      ],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "id": 12,
+      "question": "Who invented the telephone?",
+      "options": [
+        "Thomas Edison",
+        "Alexander Graham Bell",
+        "Nikola Tesla",
+        "Albert Einstein"
+      ],
+      "correctAnswer": "Alexander Graham Bell"
+    },
+    {
+      "id": 13,
+      "question": "What is the fastest land animal?",
+      "options": [
+        "Lion",
+        "Cheetah",
+        "Gazelle",
+        "Leopard"
+      ],
+      "correctAnswer": "Cheetah"
+    },
+    {
+      "id": 14,
+      "question": "Which planet is closest to the Sun?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Mercury",
+        "Earth"
+      ],
+      "correctAnswer": "Mercury"
+    },
+    {
+      "id": 15,
+      "question": "What is the main component of the Sun?",
+      "options": [
+        "Helium",
+        "Oxygen",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correctAnswer": "Hydrogen"
+    },
+    {
+      "id": 16,
+      "question": "Who painted 'The Starry Night'?",
+      "options": [
+        "Pablo Picasso",
+        "Claude Monet",
+        "Vincent van Gogh",
+        "Salvador Dali"
+      ],
+      "correctAnswer": "Vincent van Gogh"
+    }
+  ]
+}
