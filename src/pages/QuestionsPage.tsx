@@ -12,9 +12,9 @@ export const QuestionsPage: React.FC = () => {
     score,
     handleAnswer,
     currentQuestionIndex,
+    timer,
   } = useQuiz();
 
-  // Function to save answers to the backend
   const saveAnswers = async (answers: typeof userAnswers) => {
     const userId = localStorage.getItem('userId');
 
@@ -40,7 +40,6 @@ export const QuestionsPage: React.FC = () => {
     }
   };
 
-  // Call saveAnswers when results are displayed
   useEffect(() => {
     if (showResults) {
       saveAnswers(userAnswers);
@@ -73,7 +72,12 @@ export const QuestionsPage: React.FC = () => {
                   ).length}
                 </span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="flex justify-between items-center">
+                <span className="text-sm font-medium text-gray-600">
+                  Time Left: {timer}s
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
                 <div
                   className="bg-blue-600 h-2 rounded-full transition-all duration-300"
                   style={{

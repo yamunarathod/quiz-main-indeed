@@ -9,7 +9,8 @@
         "Paris",
         "Madrid"
       ],
-      "correctAnswer": "Paris"
+      "correctAnswer": "Paris",
+      "statement": "The capital of France is Paris."
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
         "Jupiter",
         "Saturn"
       ],
-      "correctAnswer": "Mars"
+      "correctAnswer": "Mars",
+      "statement": "The planet known as the Red Planet is Mars."
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
         "Giraffe",
         "Polar Bear"
       ],
-      "correctAnswer": "Blue Whale"
+      "correctAnswer": "Blue Whale",
+      "statement": "The largest mammal in the world is the Blue Whale."
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "Leonardo da Vinci",
         "Michelangelo"
       ],
-      "correctAnswer": "Leonardo da Vinci"
+      "correctAnswer": "Leonardo da Vinci",
+      "statement": "The artist who painted the Mona Lisa is Leonardo da Vinci."
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
         "Au",
         "Cu"
       ],
-      "correctAnswer": "Au"
+      "correctAnswer": "Au",
+      "statement": "The chemical symbol for gold is Au."
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
         "Australia",
         "Brazil"
       ],
-      "correctAnswer": "Australia"
+      "correctAnswer": "Australia",
+      "statement": "The country that is home to the kangaroo is Australia."
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
         "Liver",
         "Skin"
       ],
-      "correctAnswer": "Skin"
+      "correctAnswer": "Skin",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
         "Jane Austen",
         "Mark Twain"
       ],
-      "correctAnswer": "William Shakespeare"
+      "correctAnswer": "William Shakespeare",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
         "Diamond",
         "Platinum"
       ],
-      "correctAnswer": "Diamond"
+      "correctAnswer": "Diamond",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 10,
@@ -108,7 +117,8 @@
         "Silver",
         "Iron"
       ],
-      "correctAnswer": "Oxygen"
+      "correctAnswer": "Oxygen",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 11,
@@ -119,7 +129,8 @@
         "Tokyo",
         "Bangkok"
       ],
-      "correctAnswer": "Tokyo"
+      "correctAnswer": "Tokyo",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 12,
@@ -130,7 +141,8 @@
         "Nikola Tesla",
         "Albert Einstein"
       ],
-      "correctAnswer": "Alexander Graham Bell"
+      "correctAnswer": "Alexander Graham Bell",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 13,
@@ -141,7 +153,8 @@
         "Gazelle",
         "Leopard"
       ],
-      "correctAnswer": "Cheetah"
+      "correctAnswer": "Cheetah",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 14,
@@ -152,7 +165,8 @@
         "Mercury",
         "Earth"
       ],
-      "correctAnswer": "Mercury"
+      "correctAnswer": "Mercury",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 15,
@@ -163,7 +177,8 @@
         "Hydrogen",
         "Nitrogen"
       ],
-      "correctAnswer": "Hydrogen"
+      "correctAnswer": "Hydrogen",
+      "statement": "The largest organ in the human body is the Skin."
     },
     {
       "id": 16,
@@ -174,7 +189,8 @@
         "Vincent van Gogh",
         "Salvador Dali"
       ],
-      "correctAnswer": "Vincent van Gogh"
+      "correctAnswer": "Vincent van Gogh",
+      "statement": "The largest organ in the human body is the Skin."
     }
   ]
 }

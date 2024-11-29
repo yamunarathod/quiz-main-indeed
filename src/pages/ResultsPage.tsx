@@ -19,6 +19,7 @@ export const ResultsPage: React.FC = () => {
           score={state.score}
           totalQuestions={state.totalQuestions}
         />
+        
       </div>
     </div>
   );

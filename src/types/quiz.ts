@@ -3,6 +3,7 @@ export interface Question {
   question: string;
   options: string[];
   correctAnswer: string;
+  statement?: string;
 }
 
 export interface UserAnswer {

@@ -109,6 +109,7 @@
 // };
 
 
+
 import { useState, useEffect } from 'react';
 import { Question, UserAnswer } from '../types/quiz';
 import questionsData from '../data/questions.json';
@@ -125,7 +126,7 @@ export const useQuiz = () => {
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
   const [timer, setTimer] = useState<number>(15); // Timer for each question
-  const [isTimerActive, setIsTimerActive] = useState<boolean>(false);
+  const [isTimerActive, setIsTimerActive] = useState<boolean>(true);
 
   useEffect(() => {
     // Shuffle questions and their options
@@ -139,31 +140,28 @@ export const useQuiz = () => {
   }, []);
 
   useEffect(() => {
-    // When the question changes, reset the timer and start it again
-    if (questions.length > 0) {
-      setTimer(15); // Reset the timer
-      setIsTimerActive(true); // Start the timer
-    }
-  }, [currentQuestionIndex, questions]);
-
-  useEffect(() => {
-    if (isTimerActive) {
+    // Timer countdown logic
+    if (isTimerActive && timer > 0) {
       const interval = setInterval(() => {
-        setTimer((prevTime) => {
-          if (prevTime === 1) {
-            handleAnswer(""); // Automatically answer (empty string) when time runs out
-            clearInterval(interval);
-            return 15; // Reset timer for the next question
-          }
-          return prevTime - 1;
-        });
+        setTimer((prevTime) => prevTime - 1);
       }, 1000);
 
-      return () => clearInterval(interval); // Clean up interval on unmount or when timer stops
+      return () => clearInterval(interval); // Cleanup on unmount or question change
+    } else if (timer === 0) {
+      // Automatically proceed to the next question if the timer runs out
+      handleAnswer('');
     }
-  }, [isTimerActive]);
+  }, [isTimerActive, timer]);
+
+  useEffect(() => {
+    // Reset the timer when the question index changes
+    setTimer(15); // Reset timer to 15 seconds
+    setIsTimerActive(true); // Reactivate the timer
+  }, [currentQuestionIndex]);
 
   const handleAnswer = (selectedAnswer: string) => {
+    if (questions.length === 0) return;
+
     const currentQuestion = questions[currentQuestionIndex];
     const newAnswer: UserAnswer = {
       questionId: currentQuestion.id,
@@ -171,16 +169,19 @@ export const useQuiz = () => {
       correctAnswer: currentQuestion.correctAnswer,
     };
 
-    setUserAnswers([...userAnswers, newAnswer]);
+    setUserAnswers((prevAnswers) => [...prevAnswers, newAnswer]);
 
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      // Move to the next question
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
     } else {
+      // End of quiz
       const correctAnswers = [...userAnswers, newAnswer].filter(
         (answer) => answer.selectedAnswer === answer.correctAnswer
       ).length;
       setScore(correctAnswers);
       setShowResults(true);
+      setIsTimerActive(false); // Stop the timer
     }
   };
 
